@@ -18,5 +18,4 @@ public class LogMiddleware
         _logger.WriteEvent($"httpContext.Connection.RemoteIpAddress: {httpContext.Connection.RemoteIpAddress}");
         await _next(httpContext);
     }
-
 }
